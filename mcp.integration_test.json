@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mcp_ahrefs": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/Users/jakub/Ragnarson/saaga/mcp_ahrefs",
+        "mcp_ahrefs-server"
+      ]
+    }
+  }
+}

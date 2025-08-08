@@ -1,0 +1,29 @@
+load("@rules_python//python:defs.bzl", "py_binary", "py_library")
+
+py_binary(
+    name = "mcp_ahrefs_bin",
+    srcs = ["mcp_ahrefs/__main__.py"],
+    imports = ["mcp_ahrefs"],
+    main = "mcp_ahrefs/__main__.py",
+    visibility = ["//visibility:public"],
+    deps = [":mcp_ahrefs_lib"],
+)
+
+py_library(
+    name = "mcp_ahrefs_lib",
+    srcs = glob(["mcp_ahrefs/**/*.py"]),
+    imports = ["."],
+    visibility = ["//visibility:public"],
+    deps = [
+        "@mcp_mcp_ahrefs//mcp",
+        "@mcp_mcp_ahrefs//pydantic",
+        "@mcp_mcp_ahrefs//pyyaml",
+        "@mcp_mcp_ahrefs//platformdirs",
+        "@mcp_mcp_ahrefs//pydantic_settings",
+        "@mcp_mcp_ahrefs//loguru",
+        "@mcp_mcp_ahrefs//streamlit",
+        "@mcp_mcp_ahrefs//pandas",
+        "@mcp_mcp_ahrefs//plotly",
+        # Add additional dependencies based on your requirements
+    ],
+)
