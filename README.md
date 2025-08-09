@@ -2,6 +2,10 @@
 
 Ahrefs MCP Server for SAAGA
 
+<a href="https://glama.ai/mcp/servers/@SAGAAIDEV/mcp-ahrefs">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@SAGAAIDEV/mcp-ahrefs/badge" alt="Ahrefs MCP server" />
+</a>
+
 ## Quick Start with AI Assistant
 
 **Need help getting started?** Have your AI coding assistant guide you!
